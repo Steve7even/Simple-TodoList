@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TodoList.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="SaveItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout Spacing="20" Padding="15">
+        <Label  Text="Titel:" FontSize="Medium" />
+        <Entry x:Name="EntryTitel" d:Text="Item name" FontSize="Small"/>
+        <Label Text="Content:" FontSize="Medium" />
+        <Editor x:Name="EntryContent" d:Text="Item description" FontSize="Small" VerticalOptions="StartAndExpand" AutoSize="TextChanges"/>
+    </StackLayout>
+    
+</ContentPage>
