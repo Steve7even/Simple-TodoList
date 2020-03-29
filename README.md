@@ -1,3 +1,5 @@
 # Simple-TodoList
 
-Using Xamarin Forms and SQLLite Database
+Using Xamarin Forms and SQLite Database
+
+Runs on Android, IOS and UWP
